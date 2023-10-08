@@ -1,0 +1,19 @@
+bug
+
+- No se pueden repetir productos en el carrito(el mismo producto no puede estar 2 veces) solo es permitido en cantidad. => si el item ya esta solo actualiza.
+
+---------------------------------------------------------------------------------------------------------
+
+funciones para pagos:
+
+- cuando seleccionemos un metodo de pago, en caso de bancolombia y nequi mostraremos el QR.
+- agregar funcion pse(consultar si se puede)
+
+---------------------------------------------------------------------------------------------------------
+
+Nota rapida: Quiero usar un select para escoger los productos, y al hacer esto me obtenga:
+
+-codigo de producto
+-nombre de producto
+-que me deje seleccionar la cantidad
+ 
