@@ -55,12 +55,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         addButton.addEventListener('click', () => {
             const quantity = parseInt(quantityInput.value) || 1;
+            
             if (quantity > 0) {
                 addToCart(productName, productPrice, quantity);
 
                 // Limpia la cantidad después de agregar al carrito
                 quantityInput.value = '';
                 quantityInput.placeholder = 'Cantidad'; // También puedes eliminar el placeholder si lo deseas
+
+                // Limpia el campo de entrada del monto
+                amountPaid.value = '';
+                amountPaid.placeholder = 'Monto Pagado (COP)'; // También puedes eliminar el placeholder si lo deseas
+                
+                // Establece el cambio en cero
+                const formatter = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' });
+                changeAmount.textContent = formatter.format(0);
             }
         });
     });

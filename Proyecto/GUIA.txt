@@ -21,5 +21,12 @@ Nota rapida: Quiero usar un select para escoger los productos, y al hacer esto m
 
 Mejora de funciones:
 
--limpiar la cantidad luego de agregar al carrito
--si eliminamos un producto del carrito se quite el importe 
+-limpiar la cantidad luego de agregar al carrito (SOLUCIONADO)
+-si eliminamos un producto del carrito se quite el importe (SOLUCIONADO)
+-si quito agrego otro producto al carrito tambien se quite el importe y se actualice el cambio a cero (SOLUCIONADO)
+
+---------------------------------------------------------------------------------------------------------
+
+Nuevas funciones:
+
+-cuando le de a comprar me pregunte, si quiero proseguir a imprimir a pagar o quiero agregar otro producto
