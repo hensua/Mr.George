@@ -104,7 +104,7 @@ body {
         margin-top: 10px;
     }
 
-    .add-button:hover, .add-button:active {
+    .add-button:hover,  .add-button:active {
         background-color: rgb(25, 151, 0);
     }
 
@@ -140,3 +140,10 @@ body {
         text-align: right;
         margin-top: 10px;
     }
+
+/*RESPONSIVE MOVIL*/
+@media (max-width:768px) {
+    .add-button:active {
+        background-color: rgb(25, 151, 0);
+    } 
+}
