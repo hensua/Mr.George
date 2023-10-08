@@ -57,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const quantity = parseInt(quantityInput.value) || 1;
             if (quantity > 0) {
                 addToCart(productName, productPrice, quantity);
+
+                // Limpia la cantidad después de agregar al carrito
+                quantityInput.value = '';
+                quantityInput.placeholder = 'Cantidad'; // También puedes eliminar el placeholder si lo deseas
             }
         });
     });
@@ -90,6 +94,12 @@ document.addEventListener('DOMContentLoaded', function () {
             removeButton.textContent = 'Quitar';
             removeButton.addEventListener('click', () => {
                 removeFromCart(item.name);
+
+                // Limpia el campo de entrada del monto
+                amountPaid.value = '';
+                amountPaid.placeholder = 'Monto Pagado (COP)'; // También puedes eliminar el placeholder si lo deseas
+                changeAmount.textContent = formatter.format(0); // Establece el cambio en cero
+
             });
 
             listItem.appendChild(removeButton);

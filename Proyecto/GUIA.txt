@@ -1,6 +1,6 @@
 bug
 
-- No se pueden repetir productos en el carrito(el mismo producto no puede estar 2 veces) solo es permitido en cantidad. => si el item ya esta solo actualiza.
+- No se pueden repetir productos en el carrito(el mismo producto no puede estar 2 veces) solo es permitido en cantidad. => si el item ya esta solo actualiza. (SOLUCIONADO)
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -16,4 +16,10 @@ Nota rapida: Quiero usar un select para escoger los productos, y al hacer esto m
 -codigo de producto
 -nombre de producto
 -que me deje seleccionar la cantidad
- 
+
+---------------------------------------------------------------------------------------------------------
+
+Mejora de funciones:
+
+-limpiar la cantidad luego de agregar al carrito
+-si eliminamos un producto del carrito se quite el importe 
