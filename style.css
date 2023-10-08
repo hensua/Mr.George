@@ -104,7 +104,7 @@ body {
         margin-top: 10px;
     }
 
-    .add-button:hover {
+    .add-button:hover, .add-button:active {
         background-color: rgb(25, 151, 0);
     }
 
