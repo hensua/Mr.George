@@ -142,8 +142,11 @@ body {
     }
 
 /*RESPONSIVE MOVIL*/
-@media (max-width:768px) {
+@media screen and (max-width: 768px) {
+    .add-button:hover {
+        background-color: rgb(43, 255, 0); /* Mantener el color original */
+    } 
     .add-button:active {
         background-color: rgb(25, 151, 0);
-    } 
+    }
 }
