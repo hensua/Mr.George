@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 amountPaid.value = '';
                 amountPaid.placeholder = 'Monto Pagado (COP)'; // También puedes eliminar el placeholder si lo deseas
                 changeAmount.textContent = formatter.format(0); // Establece el cambio en cero
-
             });
 
             listItem.appendChild(removeButton);
