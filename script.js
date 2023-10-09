@@ -5,10 +5,60 @@ document.addEventListener('DOMContentLoaded', function () {
     const amountPaid = document.getElementById('amount-paid');
     const changeAmount = document.querySelector('.change-amount');
     const checkoutButton = document.getElementById('checkout-button');
+    
 
     let cart = [];
     let totalPrice = 0;
 
+    // Función scroll de productos
+    const productContainer = document.querySelector('.product-container');
+    const leftButton = document.querySelector('.left-button');
+    const rightButton = document.querySelector('.right-button');
+
+    let numVisibleProducts = calculateVisibleProducts();
+    let currentIndex = 0;
+
+    function calculateVisibleProducts() {
+        const containerWidth = productContainer.clientWidth;
+        const productWidth = document.querySelector('.product').offsetWidth;
+        return Math.floor(containerWidth / productWidth);
+    }
+
+    function showProducts(startIndex) {
+        const products = document.querySelectorAll('.product'); // Mueve esta línea aquí
+        products.forEach((product, i) => {
+            if (i >= startIndex && i < startIndex + numVisibleProducts) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+
+    window.addEventListener('resize', function () {
+        numVisibleProducts = calculateVisibleProducts();
+        showProducts(currentIndex);
+    });
+
+    leftButton.addEventListener('click', () => {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        }
+        showProducts(currentIndex);
+    });
+
+    rightButton.addEventListener('click', () => {
+        currentIndex++;
+        const products = document.querySelectorAll('.product'); // Mueve esta línea aquí
+        if (currentIndex > products.length - numVisibleProducts) {
+            currentIndex = products.length - numVisibleProducts;
+        }
+        showProducts(currentIndex);
+    });
+
+    showProducts(currentIndex);
+    
     // Función para agregar un producto al carrito
     function addToCart(productName, productPrice, quantity) {
         let existingItem = cart.find(item => item.name === productName);

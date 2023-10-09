@@ -30,3 +30,9 @@ Mejora de funciones:
 Nuevas funciones:
 
 -cuando le de a comprar me pregunte, si quiero proseguir a imprimir a pagar o quiero agregar otro producto
+-slider para los productos del menu
+
+---------------------------------------------------------------------------------------------------------
+
+Aun no esta funcionando:
+-los botones derecha y izquierda del menu no estan funcionando, ademas quiero saber cuantas paginas de producto hay
