@@ -36,3 +36,17 @@ Nuevas funciones:
 
 Aun no esta funcionando:
 -los botones derecha y izquierda del menu no estan funcionando, ademas quiero saber cuantas paginas de producto hay
+
+---------------------------------------------------------------------------------------------------------
+
+Loguin:(estara de manera local mientras agregamos base de datos)
+
+-iniciando una seccion lo que buscamos ahora es que salga el nombre del vendedor a cargo en la factura
+
+---------------------------------------------------------------------------------------------------------
+
+lo que quieres hacer:(menu principal de la app web)
+
+-agremamos varios cuadros con las funciones que se pueden hacer en la app web:
+	-gestor de ventas
+	-mas funciones proximamente

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 
     /*BACKGROUND FONDO DE PAGINA*/
-    background-image: url('/img/background-horizontal.png'); /* Ruta de tu imagen de fondo */
+    background-image: url('../img/background-horizontal.png'); /* Ruta de tu imagen de fondo */
     background-size: cover; /* Escalar la imagen para cubrir todo el espacio */
     background-position: center; /* Centrar la imagen en el elemento */
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
