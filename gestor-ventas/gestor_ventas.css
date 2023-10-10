@@ -1,0 +1,470 @@
+body {
+    font-family: Arial, sans-serif;
+
+    /*BACKGROUND FONDO DE PAGINA*/
+    background-image: url('/img/background-horizontal.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el espacio */
+    background-position: center; /* Centrar la imagen en el elemento */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    height: 100vh; /* Asegurar que el elemento ocupe toda la altura de la ventana */
+}
+
+/*RESPONSIVE MOVIL*/
+@media screen and (max-width: 767px) {
+/*HEADER*/
+.cabecera {
+    align-items: center;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 5rem;
+
+    
+}
+
+.logo {
+    width: 9rem;
+}
+
+.navegacion__lista {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navegacion__item {
+    list-style: none;
+}
+
+.navegacion__link {
+    color: #afafaf;
+    margin-right: 1.25rem;
+    text-decoration: none;
+}
+
+.navegacion__link:hover {
+    text-decoration: underline;
+}
+
+.navegacion__link.activo {
+    color: #ffffff;
+}
+
+/*MAIN*/
+    .contenedor {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    } 
+
+    .name-menu {
+        margin: 10px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+/*MENU*/
+    .menu {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /*Separacion entre elementos*/
+        
+
+        background-color: #ffce00;
+        border-radius: 12px;
+        width: 95%;
+        height: 350px;
+    }
+
+    .product {
+        /*border: 1px solid #000000;*/
+        padding: 10px;
+        text-align: center;
+
+        width: 170px;
+        height: 270px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        
+    }
+
+    .logo-product {
+        width: 160px;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+
+    .quantity-input {
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .add-button {
+        color: rgb(0, 0, 0);
+        background-color: rgb(43, 255, 0);
+        border: none;
+        border-radius: 5px;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .add-button:active {
+        background-color: rgb(25, 151, 0);
+    }
+
+/*CARRITO DE COMPRAS*/
+    .cart {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: left;
+        width: 300px;
+        display: inline-block;
+
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+
+    .cart-list {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .total {
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .payment {
+        margin-top: 10px;
+    }
+
+    .change {
+        text-align: right;
+        margin-top: 10px;
+    } 
+}
+/*RESPONSIVE ESCRITORIO*/
+@media screen and (min-width: 1024px) {
+    /* Estilos específicos para escritorio */
+    /*HEADER*/
+    .cabecera {
+        align-items: center;
+        background-color: #000000;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 5rem;
+    }
+
+    .logo {
+        width: 9rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+    }
+
+    .navegacion__item {
+        list-style: none;
+    }
+
+    .navegacion__link {
+        color: #afafaf;
+        margin-right: 1.25rem;
+        text-decoration: none;
+    }
+
+    .navegacion__link:hover {
+        text-decoration: underline;
+    }
+
+    .navegacion__link.activo {
+        color: #ffffff;
+    }
+
+/*MAIN*/
+    .contenedor {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*height: 100vh;*/
+    }
+
+    .name-menu {
+        margin: 10px;
+        color: #ffffff;
+    }
+
+/*MENU*/
+    .product-container {
+        display: flex;
+        width: 90%; /* El ancho que desees para tu carrusel */
+        overflow: hidden;
+        /*white-space: nowrap;*/
+        /* Otros estilos que desees aplicar */
+
+        /*background-color: aqua; */
+        
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /*Separacion entre elementos*/
+        
+
+        background-color: #ffce00;
+        border-radius: 12px;
+        width: 95%;
+        height: 350px;
+    }
+
+    .product {
+        /*border: 1px solid #000000;*/
+        padding: 10px;
+        text-align: center;
+
+        width: 170px;
+        height: 270px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        
+        margin-right: 20px;
+    }
+
+    .product:last-child {
+        margin-right: 0; /* Elimina el margen derecho del último elemento */
+    }
+
+    /*.product:hover {
+        border: 1px solid #000000;
+    } */
+
+    .logo-product {
+        width: 160px;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+
+    .quantity-input {
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .add-button {
+        color: rgb(0, 0, 0);
+        background-color: rgb(43, 255, 0);
+        border: none;
+        border-radius: 5px;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .add-button:hover {
+        background-color: rgb(25, 151, 0);
+    }
+
+/*CARRITO DE COMPRAS*/
+    .cart {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: left;
+        width: 300px;
+        display: inline-block;
+
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+
+    .cart-list {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .total {
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .payment {
+        margin-top: 10px;
+    }
+
+    .change {
+        text-align: right;
+        margin-top: 10px;
+    }
+}
+
+/*RESPONSIVE TABLETAS*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos específicos para tabletas */
+    /*HEADER*/
+    .cabecera {
+        align-items: center;
+        background-color: #000000;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 5rem;
+    }
+
+    .logo {
+        width: 9rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+    }
+
+    .navegacion__item {
+        list-style: none;
+    }
+
+    .navegacion__link {
+        color: #afafaf;
+        margin-right: 1.25rem;
+        text-decoration: none;
+    }
+
+    .navegacion__link:hover {
+        text-decoration: underline;
+    }
+
+    .navegacion__link.activo {
+        color: #ffffff;
+    }
+
+/*MAIN*/
+    .contenedor {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*height: 100vh;*/
+    }
+
+    .name-menu {
+        margin: 10px;
+        color: #ffffff;
+    }
+
+/*MENU*/
+    .product-container {
+        display: flex;
+        width: 80%; /* El ancho que desees para tu carrusel */
+        overflow: hidden;
+        /*white-space: nowrap;*/
+        /* Otros estilos que desees aplicar */
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /*Separacion entre elementos*/
+        
+
+        background-color: #ffce00;
+        border-radius: 12px;
+        width: 95%;
+        height: 350px;
+    }
+
+    .product {
+        border: 1px solid #000000;
+        padding: 10px;
+        text-align: center;
+
+        width: 170px;
+        height: 270px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        
+        margin-right: 20px;
+        display: inline-block; 
+    }
+
+    .logo-product {
+        width: 160px;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+
+    .quantity-input {
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .add-button {
+        color: rgb(0, 0, 0);
+        background-color: rgb(43, 255, 0);
+        border: none;
+        border-radius: 5px;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .add-button:hover {
+        background-color: rgb(25, 151, 0);
+    }
+
+/*CARRITO DE COMPRAS*/
+    .cart {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: left;
+        width: 300px;
+        display: inline-block;
+
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+
+    .cart-list {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .total {
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .payment {
+        margin-top: 10px;
+    }
+
+    .change {
+        text-align: right;
+        margin-top: 10px;
+    }
+}
+
