@@ -50,3 +50,7 @@ lo que quieres hacer:(menu principal de la app web)
 -agremamos varios cuadros con las funciones que se pueden hacer en la app web:
 	-gestor de ventas
 	-mas funciones proximamente
+
+
+
+	agregar rutas personalizadas entre paginas para evitar las extenciones o directorios largos

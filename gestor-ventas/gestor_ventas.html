@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Venta de Comida Rápida</title>
+    <title>Mr. George - Gestor de ventas</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="gestor_ventas.css">
+    <link rel="Website Icon" type="png" href="/img/logo-sin fondo.png"> <!--ICONO DE LA PAGINA-->
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
+    <style>
+        .product {
+    width: 170px;
+    height: 270px;
+    /* Otros estilos que desees aplicar */
+    }
+    .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Otros estilos que desees aplicar */
+}
+
+.swiper-container {
+    width: 90%;
+    /**overflow: hidden; /* Asegura que el contenido del swiper no se desborde */
+    
+}
+
+.swiper-pagination {
+    position: static; /* Asegura que la paginación no sea absoluta */
+    /*margin: 10px 0; /* Agrega margen según tu preferencia */
+    /* Otros estilos de paginación si los necesitas */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(255, 0, 0);
+}
+
+
+
+    </style>
     <header class="cabecera">
         <img class="logo" src="../img/MrGeorge-Logo.png" alt="Logo Mr. George">
         <nav class="navegacion">
             <ul class="navegacion__lista">
-                <li class="navegacion__item"><a class="navegacion__link activo" href="../index.html">Inicio</a></li>
+                <li class="navegacion__item"><a class="navegacion__link activo" href="../menu-principal/menu_principal.html">Inicio</a></li>
                 <li class="navegacion__item"><a class="navegacion__link" href="#">Recetas</a></li>
                 <li class="navegacion__item"><a class="navegacion__link" href="#">Quienes Somos</a></li>
                 <li class="navegacion__item"><a class="navegacion__link" href="#">Contacto</a></li>
@@ -23,68 +61,71 @@
     <main class="contenedor">
         <h1 class="name-menu">Menú de Comida Rápida</h1>
         <div class="menu">
-            <button class="nav-button left-button" onclick="scrollProducts('left')">&#8249;</button>
-            <div class="product-container"> <!-- Nuevo contenedor -->
-                <!-- Lista de productos con botones para agregar -->
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. Sencillo</span>
-                    <span class="product-price">4,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. Sencillo</span>
+                        <span class="product-price">4,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div>
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. Super</span>
+                        <span class="product-price">6,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div>
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. Suizo</span>
+                        <span class="product-price">8,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div>
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. Chori</span>
+                        <span class="product-price">10,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div> 
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. henry</span>
+                        <span class="product-price">15,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div> 
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. puerta</span>
+                        <span class="product-price">14,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div> 
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. george</span>
+                        <span class="product-price">17,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div> 
+                    <div class="swiper-slide product">
+                        <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
+                        <span class="product-name">P. xtrex</span>
+                        <span class="product-price">20,000 COP</span>
+                        <input type="number" class="quantity-input" placeholder="Cantidad">
+                        <button class="add-button">Agregar</button>
+                    </div> 
+                    <!-- Agrega más productos aquí -->
+                    <!-- Agrega más productos como diapositivas aquí -->
                 </div>
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. Super</span>
-                    <span class="product-price">6,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div>
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. Suizo</span>
-                    <span class="product-price">8,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div>
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. Chori</span>
-                    <span class="product-price">10,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div> 
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. henry</span>
-                    <span class="product-price">15,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div> 
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. puerta</span>
-                    <span class="product-price">14,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div> 
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. george</span>
-                    <span class="product-price">17,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div> 
-                <div class="product">
-                    <img class="logo-product" src="../img/logo.jpeg" alt="logo de producto">
-                    <span class="product-name">P. xtrex</span>
-                    <span class="product-price">20,000 COP</span>
-                    <input type="number" class="quantity-input" placeholder="Cantidad">
-                    <button class="add-button">Agregar</button>
-                </div> 
-                <!-- Agrega más productos aquí -->
             </div>
-            <button class="nav-button right-button" onclick="scrollProducts('right')">&#8250;</button>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
         </div>
     
         <!-- Carrito de compra -->
@@ -106,10 +147,30 @@
                 <span class="change-amount">0 COP</span>
             </div>
         </div>
-
-        <script src="script.js"></script>
     </main>
-    <footer></footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+            });
+
+            // Resto de tu script actual para la funcionalidad de carrito de compras
+            // ...
+        });
+    </script>
+
+<script src="script.js"></script>
 </body>
 </html>
 

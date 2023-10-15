@@ -212,7 +212,7 @@ body {
     .product-container {
         display: flex;
         width: 90%; /* El ancho que desees para tu carrusel */
-        overflow: hidden;
+        
         /*white-space: nowrap;*/
         /* Otros estilos que desees aplicar */
 
@@ -224,7 +224,6 @@ body {
         flex-wrap: wrap; 
         align-items: center;
         justify-content: center;
-        gap: 20px; /*Separacion entre elementos*/
         
 
         background-color: #ffce00;
