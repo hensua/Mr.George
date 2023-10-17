@@ -7,6 +7,7 @@ body {
     background-position: center; /* Centrar la imagen en el elemento */
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     height: 100vh; /* Asegurar que el elemento ocupe toda la altura de la ventana */
+    
 }
 
 /*RESPONSIVE MOVIL*/
@@ -20,8 +21,6 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
     height: 5rem;
-
-    
 }
 
 .logo {
@@ -134,6 +133,10 @@ body {
         border-radius: 12px;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     .cart-list {
         list-style-type: none;
         padding: 0;
@@ -145,6 +148,21 @@ body {
         margin-top: 10px;
     }
 
+    .monto_pago {
+        padding: 10px 10px;
+        width: 170px;
+    }
+
+    .boton_compra {
+        color: rgb(0, 0, 0);
+        background-color: rgb(43, 255, 0);
+        padding: 12px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
     .payment {
         margin-top: 10px;
     }
@@ -153,6 +171,17 @@ body {
         text-align: right;
         margin-top: 10px;
     } 
+
+    .remove-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 5px;
+        /* Agrega más estilos según tus necesidades */
+    }
 }
 /*RESPONSIVE ESCRITORIO*/
 @media screen and (min-width: 1024px) {
@@ -294,6 +323,10 @@ body {
         border-radius: 12px;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     .cart-list {
         list-style-type: none;
         padding: 0;
@@ -305,6 +338,21 @@ body {
         margin-top: 10px;
     }
 
+    .monto_pago {
+        padding: 10px 10px;
+        width: 170px;
+    }
+
+    .boton_compra {
+        color: rgb(0, 0, 0);
+        background-color: rgb(43, 255, 0);
+        padding: 12px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
     .payment {
         margin-top: 10px;
     }
@@ -312,6 +360,17 @@ body {
     .change {
         text-align: right;
         margin-top: 10px;
+    }
+
+    .remove-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 5px;
+        /* Agrega más estilos según tus necesidades */
     }
 }
 

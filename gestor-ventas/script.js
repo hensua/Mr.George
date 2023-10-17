@@ -102,6 +102,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // Botón para quitar el producto del carrito
             const removeButton = document.createElement('button');
             removeButton.textContent = 'Quitar';
+
+            // Agregar la clase CSS al botón
+            removeButton.classList.add('remove-button');
+
             removeButton.addEventListener('click', () => {
                 removeFromCart(item.name);
 
@@ -111,6 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 changeAmount.textContent = formatter.format(0); // Establece el cambio en cero
             });
 
+            // Agregar el botón al documento
+            document.body.appendChild(removeButton);
+
             listItem.appendChild(removeButton);
             cartList.appendChild(listItem);
         });
@@ -118,5 +125,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //OFRECER ESTE PRODUCTO COMO SERVICIO
-
 
